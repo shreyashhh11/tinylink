@@ -8,6 +8,9 @@ const CreateLinkForm = ({ onSuccess, onCancel }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
+  // API configuration
+  const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+
   // Validate URL
   const isValidUrl = (string) => {
     try {
@@ -47,7 +50,7 @@ const CreateLinkForm = ({ onSuccess, onCancel }) => {
     try {
       setLoading(true);
       
-      const response = await fetch('/api/links', {
+      const response = await fetch(`${API_BASE_URL}/api/links`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

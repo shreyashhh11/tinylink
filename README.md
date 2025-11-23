@@ -2,11 +2,7 @@
 
 A modern URL shortener application built with Node.js, Express, React, and PostgreSQL. Create short links, track click statistics, and manage your URLs with a clean, responsive interface.
 
-## 🚀 Live Demo
 
-- **Frontend**: [https://tinylink-frontend.vercel.app](https://tinylink-frontend.vercel.app)
-- **Backend**: [https://tinylink-backend.onrender.com](https://tinylink-backend.onrender.com)
-- **Health Check**: [https://tinylink-backend.onrender.com/healthz](https://tinylink-backend.onrender.com/healthz)
 
 ## 📋 Table of Contents
 
